@@ -1,0 +1,15 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://fuel:fuel123@cluster0.ytqv7py.mongodb.net/?retryWrites=true&w=majority
+      database: FUELAPP
+    #  host: localhost
+    #  port: 27017 
+    #  username: ChanukaAthalage
+    #  password: ChanukaAthalage 
+
+      
+      
+
+  kafka:
+    bootstrap-servers: 9092

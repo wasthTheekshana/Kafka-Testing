@@ -1,0 +1,18 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://ChanukaAthalage:ChanukaAthalage@fuel-app.kyctv.mongodb.net/?retryWrites=true&w=majority
+      database: Fuel-App
+  application:
+    name: inventory
+      
+server:
+  port: 8081
+  
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    instance-id: ${spring.application.name}-${random.int}
+    hostname: localhost

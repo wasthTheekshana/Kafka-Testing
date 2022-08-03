@@ -1,0 +1,30 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://ChanukaAthalage:ChanukaAthalage@fuel-app.kyctv.mongodb.net/?retryWrites=true&w=majority
+      database: Fuel-App
+       #  host: localhost
+       #  port: 27017 
+       #  username: ChanukaAthalage
+       #  password: ChanukaAthalage 
+  application:
+    name: orders
+ 
+server:
+  port: 0
+  
+  kafka:
+    bootstrap-servers: 9092
+     
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    instance-id: ${spring.application.name}-${random.int}
+    hostname: localhost
+  
+
+      
+
+ 

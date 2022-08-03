@@ -1,0 +1,7 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://ChanukaAthalage:ChanukaAthalage@fuel-app.kyctv.mongodb.net/?retryWrites=true&w=majority
+      database: Fuel-App
+server:
+  port: 8082
